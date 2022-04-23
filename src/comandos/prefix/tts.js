@@ -29,7 +29,7 @@ exports.run = async (client, message, args) => {
             adapterCreator: message.channel.guild.voiceAdapterCreator,
             selfDeaf: true,
             selfMute: false,
-            volune: 200
+            volume: 200
         });
 
         //TTS - Google Package
