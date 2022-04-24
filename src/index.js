@@ -2,7 +2,7 @@ const { Client, Intents, Collection, Discord } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_PRESENCES, Intents.FLAGS.GUILD_VOICE_STATES] });
 const { token, prefix } = require('../src/util/config.json');
 
-client.on('ready', async message => {
+client.on('ready', () => {
     console.log('nina ajudante está online!')
 })
 
